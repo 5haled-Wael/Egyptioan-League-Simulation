@@ -1,0 +1,129 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.1.2 Chrome/138.0.7204.243 Electron/37.4.0 Safari/537.36" version="28.1.2">
+  <diagram name="Page-1" id="GFLnuttDf6g5XTONFrCD">
+    <mxGraphModel dx="646" dy="1517" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#0D2D4C" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="QxB42T4TuNeCqR3_C4bH-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#BCD3E5;strokeColor=#FFFFFF;fontColor=#000000;" edge="1" parent="1" source="QxB42T4TuNeCqR3_C4bH-55" target="QxB42T4TuNeCqR3_C4bH-80">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="-350" as="sourcePoint" />
+            <mxPoint x="210" y="-250" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QxB42T4TuNeCqR3_C4bH-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fillColor=#BCD3E5;strokeColor=#FFFFFF;fontColor=#000000;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="QxB42T4TuNeCqR3_C4bH-80" target="QxB42T4TuNeCqR3_C4bH-73">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="270" y="-270" as="sourcePoint" />
+            <mxPoint x="270" y="-430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QxB42T4TuNeCqR3_C4bH-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#BCD3E5;strokeColor=#FFFFFF;fontColor=#000000;" edge="1" parent="1" source="QxB42T4TuNeCqR3_C4bH-73" target="QxB42T4TuNeCqR3_C4bH-74">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="330" y="-460" as="sourcePoint" />
+            <mxPoint x="410" y="-460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QxB42T4TuNeCqR3_C4bH-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#BCD3E5;strokeColor=#FFFFFF;fontColor=#000000;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="QxB42T4TuNeCqR3_C4bH-74" target="QxB42T4TuNeCqR3_C4bH-75">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="530" y="-460" as="sourcePoint" />
+            <mxPoint x="580" y="-460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QxB42T4TuNeCqR3_C4bH-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#BCD3E5;strokeColor=#FFFFFF;fontColor=#000000;" edge="1" parent="1" source="QxB42T4TuNeCqR3_C4bH-75" target="QxB42T4TuNeCqR3_C4bH-76">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700" y="-460" as="sourcePoint" />
+            <mxPoint x="750" y="-460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QxB42T4TuNeCqR3_C4bH-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#BCD3E5;strokeColor=#FFFFFF;fontColor=#000000;" edge="1" parent="1" source="QxB42T4TuNeCqR3_C4bH-76" target="QxB42T4TuNeCqR3_C4bH-77">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="870" y="-460" as="sourcePoint" />
+            <mxPoint x="990" y="-400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QxB42T4TuNeCqR3_C4bH-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#BCD3E5;strokeColor=#FFFFFF;fontColor=#000000;" edge="1" parent="1" source="QxB42T4TuNeCqR3_C4bH-44" target="QxB42T4TuNeCqR3_C4bH-79">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1360" y="-400" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1359" y="-460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QxB42T4TuNeCqR3_C4bH-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#BCD3E5;strokeColor=#FFFFFF;fontColor=#000000;" edge="1" parent="1" source="QxB42T4TuNeCqR3_C4bH-44" target="QxB42T4TuNeCqR3_C4bH-78">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1210" y="-320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QxB42T4TuNeCqR3_C4bH-44" value="if Line Up is True" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fillColor=#BCD3E5;strokeColor=#FFFFFF;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="-510" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="QxB42T4TuNeCqR3_C4bH-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fillColor=#BCD3E5;strokeColor=#FFFFFF;fontColor=#000000;" edge="1" parent="1" source="QxB42T4TuNeCqR3_C4bH-79" target="QxB42T4TuNeCqR3_C4bH-53">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1480" y="-400" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="1360" y="-250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QxB42T4TuNeCqR3_C4bH-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#BCD3E5;strokeColor=#FFFFFF;fontColor=#000000;" edge="1" parent="1" source="QxB42T4TuNeCqR3_C4bH-78" target="QxB42T4TuNeCqR3_C4bH-53">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1210" y="-260" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QxB42T4TuNeCqR3_C4bH-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#BCD3E5;strokeColor=#FFFFFF;fontColor=#000000;" edge="1" parent="1" source="QxB42T4TuNeCqR3_C4bH-77" target="QxB42T4TuNeCqR3_C4bH-44">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1110" y="-460" />
+            </Array>
+            <mxPoint x="1110" y="-400" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QxB42T4TuNeCqR3_C4bH-50" value="&lt;font style=&quot;color: rgb(255, 255, 255);&quot; face=&quot;Helvetica&quot;&gt;Faild&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="-400" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QxB42T4TuNeCqR3_C4bH-51" value="&lt;span style=&quot;color: rgb(237, 237, 237); font-family: Helvetica;&quot;&gt;Successfull&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="-490" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QxB42T4TuNeCqR3_C4bH-52" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1240" y="-280" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QxB42T4TuNeCqR3_C4bH-53" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#BCD3E5;strokeColor=#000000;fontColor=#000000;" vertex="1" parent="QxB42T4TuNeCqR3_C4bH-52">
+          <mxGeometry width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QxB42T4TuNeCqR3_C4bH-54" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#BCD3E5;strokeColor=#000000;fontColor=#000000;labelBorderColor=none;textShadow=0;" vertex="1" parent="QxB42T4TuNeCqR3_C4bH-52">
+          <mxGeometry x="7" y="7" width="46" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="QxB42T4TuNeCqR3_C4bH-55" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#BCD3E5;strokeColor=#000000;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="120" y="-280" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QxB42T4TuNeCqR3_C4bH-73" value="&lt;span style=&quot;font-family: Helvetica;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Request current squad&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fillStyle=auto;fillColor=#BCD3E5;" vertex="1" parent="1">
+          <mxGeometry x="210" y="-490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QxB42T4TuNeCqR3_C4bH-74" value="&lt;span style=&quot;font-family: Helvetica;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Get squad players&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fillStyle=auto;fillColor=#BCD3E5;" vertex="1" parent="1">
+          <mxGeometry x="400" y="-490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QxB42T4TuNeCqR3_C4bH-75" value="&lt;span style=&quot;font-family: Helvetica;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Edit Line Up&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fillStyle=auto;fillColor=#BCD3E5;" vertex="1" parent="1">
+          <mxGeometry x="560" y="-490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QxB42T4TuNeCqR3_C4bH-76" value="&lt;span style=&quot;font-family: Helvetica;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Get squad players&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fillStyle=auto;fillColor=#BCD3E5;" vertex="1" parent="1">
+          <mxGeometry x="720" y="-490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QxB42T4TuNeCqR3_C4bH-77" value="&lt;span style=&quot;font-family: Helvetica;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Get squad players&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fillStyle=auto;fillColor=#BCD3E5;" vertex="1" parent="1">
+          <mxGeometry x="910" y="-490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QxB42T4TuNeCqR3_C4bH-78" value="&lt;span style=&quot;font-family: Helvetica;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Get squad players&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fillStyle=auto;fillColor=#BCD3E5;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="-370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QxB42T4TuNeCqR3_C4bH-79" value="&lt;span style=&quot;font-family: Helvetica;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Get squad players&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fillStyle=auto;fillColor=#BCD3E5;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="-490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QxB42T4TuNeCqR3_C4bH-80" value="&lt;span style=&quot;font-family: Helvetica;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Click &quot;Line Up&quot;&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fillStyle=auto;fillColor=#BCD3E5;" vertex="1" parent="1">
+          <mxGeometry x="210" y="-270" width="120" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,44 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.1.2 Chrome/138.0.7204.243 Electron/37.4.0 Safari/537.36" version="28.1.2">
+  <diagram name="Page-1" id="2HHIY0zytVYl1FQlCnxz">
+    <mxGraphModel dx="295" dy="189" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#0D2D4C" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2SwdkRGmUb3Jct1cFJvE-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=-0.018;exitY=0.295;exitDx=0;exitDy=0;entryX=-0.002;entryY=0.878;entryDx=0;entryDy=0;fontColor=#000000;strokeColor=#FFFFFF;exitPerimeter=0;entryPerimeter=0;" parent="1" source="60UQiV5OTR4zLiJq8ry1-36" target="60UQiV5OTR4zLiJq8ry1-46" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="158" y="844" />
+              <mxPoint x="140" y="844" />
+              <mxPoint x="140" y="660" />
+              <mxPoint x="161" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="60UQiV5OTR4zLiJq8ry1-33" value="Admin" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#BCD3E5;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="161" y="760" width="160" height="152" as="geometry" />
+        </mxCell>
+        <mxCell id="60UQiV5OTR4zLiJq8ry1-34" value="- AdminLevel:int" style="text;strokeColor=none;fillColor=#788490;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontColor=#000000;" parent="60UQiV5OTR4zLiJq8ry1-33" vertex="1">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="60UQiV5OTR4zLiJq8ry1-36" value="+ CreateTeam(Team)&lt;div&gt;+ RemoveTeam(Team)&lt;/div&gt;&lt;div&gt;+ ManageLeague()&lt;/div&gt;" style="text;strokeColor=none;fillColor=#5B646C;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontColor=#000000;" parent="60UQiV5OTR4zLiJq8ry1-33" vertex="1">
+          <mxGeometry y="52" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="60UQiV5OTR4zLiJq8ry1-45" value="User" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#BCD3E5;" parent="1" vertex="1">
+          <mxGeometry x="161" y="560" width="160" height="162" as="geometry" />
+        </mxCell>
+        <mxCell id="60UQiV5OTR4zLiJq8ry1-46" value="- Id:int&lt;div&gt;- Name:string&lt;/div&gt;&lt;div&gt;- Email:string&lt;/div&gt;&lt;div&gt;- Password:string&lt;/div&gt;&lt;div&gt;- Selected team: team&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=#788490;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontColor=#000000;" parent="60UQiV5OTR4zLiJq8ry1-45" vertex="1">
+          <mxGeometry y="26" width="160" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="60UQiV5OTR4zLiJq8ry1-47" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;fontColor=#000000;" parent="60UQiV5OTR4zLiJq8ry1-45" vertex="1">
+          <mxGeometry y="110" width="160" as="geometry" />
+        </mxCell>
+        <mxCell id="60UQiV5OTR4zLiJq8ry1-48" value="+ login()&lt;div&gt;+ logout()&lt;/div&gt;&lt;div&gt;+ Select Team()&lt;/div&gt;" style="text;strokeColor=none;fillColor=#5B646C;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontColor=#000000;" parent="60UQiV5OTR4zLiJq8ry1-45" vertex="1">
+          <mxGeometry y="110" width="160" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="60UQiV5OTR4zLiJq8ry1-60" value="Inheretance" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="132" y="728" width="90" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

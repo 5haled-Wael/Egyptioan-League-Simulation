@@ -1,0 +1,128 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.5 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36" version="28.2.5">
+  <diagram name="Page-1" id="67LdAqj1Mo38WKZV-hbB">
+    <mxGraphModel dx="1878" dy="619" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="TuJ0RQLnpoXZ_oC1F9Dg-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="TuJ0RQLnpoXZ_oC1F9Dg-6" target="TuJ0RQLnpoXZ_oC1F9Dg-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="220" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="50" y="340" />
+              <mxPoint x="50" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cKgYdpAjDYvRwU0xd-7z-1" value="Perform team service" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="TuJ0RQLnpoXZ_oC1F9Dg-1">
+          <mxGeometry x="0.1558" y="2" relative="1" as="geometry">
+            <mxPoint x="34" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TuJ0RQLnpoXZ_oC1F9Dg-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="TuJ0RQLnpoXZ_oC1F9Dg-6" target="TuJ0RQLnpoXZ_oC1F9Dg-14" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cKgYdpAjDYvRwU0xd-7z-4" value="View leage stats" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="TuJ0RQLnpoXZ_oC1F9Dg-2">
+          <mxGeometry x="0.3633" y="-3" relative="1" as="geometry">
+            <mxPoint x="-12" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TuJ0RQLnpoXZ_oC1F9Dg-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="TuJ0RQLnpoXZ_oC1F9Dg-6" target="TuJ0RQLnpoXZ_oC1F9Dg-10" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="460" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="50" y="340" />
+              <mxPoint x="50" y="460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cKgYdpAjDYvRwU0xd-7z-2" value="Play game" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="TuJ0RQLnpoXZ_oC1F9Dg-4">
+          <mxGeometry x="0.0358" y="-5" relative="1" as="geometry">
+            <mxPoint x="45" y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TuJ0RQLnpoXZ_oC1F9Dg-6" value="User" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-50" y="320" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TuJ0RQLnpoXZ_oC1F9Dg-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="TuJ0RQLnpoXZ_oC1F9Dg-8" target="TuJ0RQLnpoXZ_oC1F9Dg-18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CqjXYbNnt6NuKSs5W_xZ-1" value="Team Request" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="TuJ0RQLnpoXZ_oC1F9Dg-7" vertex="1" connectable="0">
+          <mxGeometry x="-0.1543" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TuJ0RQLnpoXZ_oC1F9Dg-8" value="Team Management Module" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="170" y="200" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TuJ0RQLnpoXZ_oC1F9Dg-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="TuJ0RQLnpoXZ_oC1F9Dg-10" target="TuJ0RQLnpoXZ_oC1F9Dg-24" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CqjXYbNnt6NuKSs5W_xZ-3" value="Submit Result" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="TuJ0RQLnpoXZ_oC1F9Dg-30" vertex="1" connectable="0">
+          <mxGeometry x="-0.021" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TuJ0RQLnpoXZ_oC1F9Dg-10" value="&lt;span style=&quot;text-align: left;&quot;&gt;Mini-Game Module&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="170" y="440" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TuJ0RQLnpoXZ_oC1F9Dg-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="TuJ0RQLnpoXZ_oC1F9Dg-14" target="TuJ0RQLnpoXZ_oC1F9Dg-24" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CqjXYbNnt6NuKSs5W_xZ-2" value="Get League Data" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="TuJ0RQLnpoXZ_oC1F9Dg-29" vertex="1" connectable="0">
+          <mxGeometry x="-0.0912" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TuJ0RQLnpoXZ_oC1F9Dg-14" value="League &amp;amp; Stats Dashboard Module" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="170" y="320" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TuJ0RQLnpoXZ_oC1F9Dg-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="TuJ0RQLnpoXZ_oC1F9Dg-18" target="TuJ0RQLnpoXZ_oC1F9Dg-25" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="220" />
+              <mxPoint x="600" y="325" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CqjXYbNnt6NuKSs5W_xZ-4" value="Store/Update Team Info" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="TuJ0RQLnpoXZ_oC1F9Dg-17" vertex="1" connectable="0">
+          <mxGeometry x="-0.0215" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TuJ0RQLnpoXZ_oC1F9Dg-18" value="&lt;span style=&quot;text-align: left;&quot;&gt;Team Management Service&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="395" y="200" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TuJ0RQLnpoXZ_oC1F9Dg-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="TuJ0RQLnpoXZ_oC1F9Dg-24" target="TuJ0RQLnpoXZ_oC1F9Dg-25" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="460" />
+              <mxPoint x="600" y="355" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CqjXYbNnt6NuKSs5W_xZ-5" value="Get/Edit Match &amp;amp; Standings Data" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="TuJ0RQLnpoXZ_oC1F9Dg-32" vertex="1" connectable="0">
+          <mxGeometry x="-0.1938" relative="1" as="geometry">
+            <mxPoint y="-30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TuJ0RQLnpoXZ_oC1F9Dg-24" value="&lt;div style=&quot;&quot;&gt;League Management Service&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="395" y="440" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TuJ0RQLnpoXZ_oC1F9Dg-25" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;DataBase&lt;/font&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="670" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TuJ0RQLnpoXZ_oC1F9Dg-26" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Front-End&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#a20025;strokeColor=#6F0000;fontColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="160" y="40" width="140" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="TuJ0RQLnpoXZ_oC1F9Dg-27" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Back-End&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#a20025;strokeColor=#6F0000;fontColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="385" y="40" width="140" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="TuJ0RQLnpoXZ_oC1F9Dg-28" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;DataBase&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#a20025;strokeColor=#6F0000;fontColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="660" y="40" width="140" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
