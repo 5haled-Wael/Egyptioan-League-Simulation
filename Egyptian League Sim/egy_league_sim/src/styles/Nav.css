@@ -1,0 +1,55 @@
+.icon {
+  background-color: var(--color-card);
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+}
+
+.icon:first-child {
+  color: var(--color-text-secondary);
+}
+
+.my-nav {
+  background-color: var(--color-background-secondary);
+  position: relative;
+}
+
+.my-nav .navbar-toggler:focus {
+  box-shadow: 0 0 0 1px var(--color-text-primary);
+}
+
+.my-nav .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+@media (max-width: 992px) {
+  .collapse.navbar-collapse,
+  .collapsing.navbar-collapse {
+    background-color: rgba(3, 6, 21, 0.8);
+    border-radius: 15px;
+    padding: 0.5rem 1rem;
+    overflow: hidden;
+  }
+}
+
+.my-nav .nav-link {
+  border-radius: 15px;
+  color: var(--color-text-primary) !important;
+  margin: 0.2rem 0;
+  transition: 0.3s;
+}
+
+.my-nav .nav-link.active,
+.my-nav .nav-link:hover:not(.navbar-brand) {
+  color: var(--color-text-secondary) !important;
+  background-color: var(--color-text-primary);
+  border-radius: 15px;
+}
+
+.over-hero {
+  background-color: transparent !important;
+  position: absolute !important;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}

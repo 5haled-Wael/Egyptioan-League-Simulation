@@ -1,0 +1,82 @@
+.league-leader {
+  background-color: var(--color-background-secondary);
+  border: solid 1px var(--color-background-third);
+}
+
+.league-leader > div {
+  background-color: var(--color-background-primary);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.league-leader > div img {
+  width: 120px;
+  display: block;
+  margin: 0 auto;
+}
+
+.league-leader .stats {
+  width: 100%;
+}
+
+.league-leader .stats span {
+  font-size: 15px;
+}
+
+.top-scorer {
+  border: solid 1px var(--color-background-third);
+}
+
+.top-scorer img {
+  width: 80px;
+  object-fit: cover;
+}
+
+.league-leader > div img,
+.top-scorer img {
+  max-width: 100%;
+  height: auto;
+}
+
+.top-scorer .goal-text {
+  color: var(--color-highlight);
+}
+
+.stats-holder {
+  flex: 7 1 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.season-progress {
+  background-color: var(--color-background-secondary);
+  border: solid 1px var(--color-background-third);
+  padding: 21px 0;
+  flex-shrink: 0;
+}
+
+.team-competing {
+  border: solid 1px var(--color-background-third);
+  flex: 1;
+}
+
+.fs-15 {
+  font-size: 15px;
+}
+
+.matchweek {
+  flex: 5 1 200px;
+  background-color: var(--color-background-secondary);
+  border: solid 1px var(--color-background-third);
+}
+
+.icon-yellow {
+  color: yellow;
+}
+
+.icon-red {
+  color: red;
+}

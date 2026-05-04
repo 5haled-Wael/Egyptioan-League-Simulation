@@ -1,0 +1,38 @@
+.players-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.team-players-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.btn-back {
+  background: none;
+  border: 1px solid var(--color-background-third);
+  color: var(--color-text-primary);
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 13px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+.btn-back:hover {
+  background-color: var(--color-background-third);
+  opacity: 1;
+}
+
+.players-group-title {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-highlight);
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--color-background-third);
+}

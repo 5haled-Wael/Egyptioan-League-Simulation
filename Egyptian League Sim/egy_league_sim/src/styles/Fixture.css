@@ -1,0 +1,113 @@
+/* ── Card ── */
+.match-card {
+  background-color: var(--color-background-primary);
+  border: solid 1px var(--color-background-third);
+  transition: 0.15s ease;
+  cursor: pointer;
+}
+
+.match-card:hover {
+  border-color: var(--color-background-secondary);
+}
+
+/* ── Header ── */
+.match-header {
+  background-color: var(--color-background-third);
+  border-bottom: 1px solid var(--color-background-third);
+}
+
+.match-date {
+  font-size: 11px;
+  color: var(--color-text-primary);
+  letter-spacing: 0.02em;
+}
+
+/* ── Status badges ── */
+.status-badge {
+  font-size: 10px;
+  font-weight: 500;
+  padding: 3px 8px;
+  border-radius: 20px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.status-ft {
+  background-color: var(--color-text-primary);
+  color: var(--color-text-secondary);
+}
+
+.status-upcoming {
+  background-color: var(--color-text-secondary);
+  color: var(--color-text-primary);
+}
+
+/* ── Teams ── */
+.team-col {
+  flex: 1;
+  min-width: 0;
+}
+
+.team-logo-wrap {
+  width: 48px;
+  height: 48px;
+  background-color: var(--color-card);
+  flex-shrink: 0;
+}
+
+.team-logo-wrap img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
+.team-name {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  line-height: 1.3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 90px;
+}
+
+/* ── Score ── */
+.score-block {
+  min-width: 60px;
+  flex-shrink: 0;
+}
+
+.score {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.score-divider {
+  font-size: 16px;
+  color: var(--color-text-primary);
+  font-weight: 400;
+}
+
+.score-vs {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-text-primary);
+}
+
+/* ── Footer ── */
+.match-footer {
+  color: var(--color-text-primary);
+  border-top: 1px solid var(--color-background-third);
+}
+
+.stadium-name {
+  font-size: 11px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

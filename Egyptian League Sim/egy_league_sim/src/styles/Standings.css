@@ -1,0 +1,57 @@
+table.std,
+table.std thead tr th,
+table.std tbody tr td,
+table.std tbody tr th {
+  background-color: var(--color-background-secondary);
+  color: var(--color-text-primary);
+  border-color: var(--color-background-third);
+  padding: 10px 15px;
+}
+
+table.std tbody tr td,
+table.std tbody tr th {
+  padding: 10px 15px;
+}
+
+table.std tbody tr:last-child td,
+table.std tbody tr:last-child th {
+  border-bottom: none;
+}
+
+table.std {
+  border-radius: 20px;
+  overflow: hidden;
+  border-collapse: "separate";
+  border-spacing: 0;
+}
+
+.std .teamLogoWrapper {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+  background-size: 85%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.champions td,
+.champions th {
+  background-color: #007e35 !important;
+}
+
+.confederation td,
+.confederation th {
+  background-color: #008bfd94 !important;
+}
+
+.relegation td,
+.relegation th {
+  background-color: #7e0000 !important;
+}
+
+.table tbody tr {
+  cursor: pointer;
+}

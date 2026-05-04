@@ -1,0 +1,94 @@
+.game {
+  min-height: 100vh;
+}
+
+.game iframe {
+  flex: 1;
+  border: none;
+  display: block;
+}
+
+/* WASD ICON */
+.wasd-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+
+.wasd-row {
+  display: flex;
+  gap: 3px;
+}
+
+.wasd-row span {
+  width: 22px;
+  height: 22px;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+/* SPACE ICON */
+.space-icon {
+  width: 60px;
+  height: 22px;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+/* Q KEY */
+.q-key {
+  border: 1px solid currentColor;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+/* CONTROLLER */
+.controller {
+  background-color: var(--color-background-secondary);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* TIMER */
+.timer-display {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  background: linear-gradient(
+    135deg,
+    var(--color-background-secondary),
+    var(--color-background-third)
+  );
+  border-radius: 16px;
+  color: var(--color-highlight);
+}
+
+.game-ended {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  border-radius: 16px;
+  margin: 1rem 0;
+}
+
+.game-ended h2 {
+  font-size: 2rem;
+  color: #ef4444;
+}

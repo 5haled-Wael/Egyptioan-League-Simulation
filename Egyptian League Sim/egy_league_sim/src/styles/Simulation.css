@@ -1,0 +1,96 @@
+.sim-page {
+  background-color: #080e1c;
+}
+
+.sim-page .glow {
+  width: 280px;
+  height: 280px;
+  background: rgba(59, 130, 246, 0.15);
+  filter: blur(60px);
+  top: -80px;
+  left: -60px;
+}
+
+.sim-page .date {
+  font-size: 13px;
+}
+
+.navigation-btn:hover {
+  background-color: var(--color-background-third) !important;
+}
+
+.sim-page .lable span {
+  font-size: 12px;
+}
+
+.sim-page .progress {
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.sim-page .progress-bar {
+  background: linear-gradient(90deg, #3b82f6, #f59e0b);
+}
+
+.sim-page .sim button {
+  min-height: 90px;
+  flex-grow: 3;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--color-text-primary);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sim-btn:hover {
+  transition: 0.3s ease;
+  background-color: var(--color-background-third) !important;
+  transform: scale(102%);
+}
+
+.sim-btn .fast-text {
+  font-size: 12px;
+  color: #26427d;
+}
+
+.sim-btn span {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.sim-btn:hover span {
+  transition: 0.3s ease;
+  color: white !important;
+  opacity: 100% !important;
+  transform: scale(102%);
+  letter-spacing: 0.5px;
+}
+
+/* Navigation buttons */
+.navigation-btn {
+  transition: all 0.3s ease;
+}
+
+.navigation-btn:hover:not(:disabled) {
+  background-color: var(--color-background-third) !important;
+}
+
+.navigation-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Simulation buttons */
+.sim-btn {
+  transition: all 0.3s ease;
+}
+
+.sim-btn:hover:not(:disabled) {
+  background-color: var(--color-background-third) !important;
+  transform: scale(102%);
+}
+
+.sim-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none !important;
+}

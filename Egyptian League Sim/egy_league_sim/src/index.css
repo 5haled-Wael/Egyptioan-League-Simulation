@@ -1,0 +1,70 @@
+/* VARIABLES */
+:root {
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #000000;
+  --color-background-primary: #030615;
+  --color-background-secondary: #090f2c;
+  --color-background-third: #192c8c;
+  --color-card: #e5e5e5;
+  --color-highlight: #f59e0b;
+  --font-family: "Oswald";
+}
+/*== VARIABLES ==*/
+
+/* FONT */
+@font-face {
+  font-family: "Oswald";
+  src: url("./fonts/Oswald/Oswald-ExtraLight.ttf");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("./fonts/Oswald/Oswald-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("./fonts/Oswald/Oswald-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("./fonts/Oswald/Oswald-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("./fonts/Oswald/Oswald-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("./fonts/Oswald/Oswald-Bold.ttf");
+  font-weight: 700;
+}
+/*== FONT ==*/
+
+/* GLOBAL STYLES */
+#root {
+  font-family: var(--font-family);
+  background-color: var(--color-background-primary);
+  color: var(--color-text-primary);
+  margin: 0;
+  min-height: 100vh;
+}
+
+html {
+  background-color: var(--color-background-primary);
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none !important;
+  color: var(--color-text-primary) !important;
+}
+/*== GLOBAL STYLES ==*/

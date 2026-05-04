@@ -1,0 +1,126 @@
+/* TEAM HEAD */
+.team-head .team-info {
+  background-color: var(--color-background-secondary);
+  border: solid 1px var(--color-background-third);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.team-info img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  .team-info img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.team-info p {
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.team-info span {
+  font-size: 14px;
+  color: gray;
+}
+
+.team-head .team-details {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  flex: 1;
+}
+
+.team-head .team-details > div {
+  background-color: var(--color-background-secondary);
+  border: solid 1px var(--color-background-third);
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1;
+}
+
+.team-details .std-name {
+  color: var(--color-highlight);
+  font-size: 1.5rem;
+}
+
+.team-details .std-capacity {
+  background-color: var(--color-background-secondary);
+  border-radius: 10px;
+  width: fit-content;
+  padding: 3px 10px;
+  border: solid 1px var(--color-background-third);
+}
+
+.stat-box {
+  background-color: var(--color-background-primary);
+  border-color: var(--color-background-third) !important;
+}
+
+.section-label {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-highlight);
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--color-background-third);
+}
+
+.players {
+  border-bottom: 1px solid var(--color-background-third);
+}
+.players .section-label {
+  border: none !important;
+  margin-bottom: 8px;
+}
+
+/* FIXTURES */
+.fixtures-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.mw-navigator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.mw-arrow {
+  background: none;
+  border: 1px solid var(--color-background-third);
+  color: var(--color-text-primary);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mw-arrow:hover:not(:disabled) {
+  border-color: var(--color-highlight);
+  color: var(--color-highlight);
+}
+
+.mw-arrow:disabled {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+
+.mw-label {
+  font-size: 14px;
+  font-weight: 600;
+  min-width: 120px;
+  text-align: center;
+  color: var(--color-highlight);
+}

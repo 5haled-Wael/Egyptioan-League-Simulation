@@ -1,0 +1,64 @@
+.win,
+.lose,
+.draw {
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 5px;
+  font-size: 13px;
+  font-weight: 500;
+  border: solid 1px white;
+}
+
+.win {
+  background-color: green;
+  color: var(--color-text-primary);
+}
+
+.lose {
+  background-color: red;
+  color: var(--color-text-primary);
+}
+
+.draw {
+  background-color: gray;
+  color: var(--color-text-primary);
+}
+
+/* EXPANDED */
+.team-form-expanded-wrapper {
+  overflow-x: auto;
+}
+
+.team-form-expanded {
+  display: flex;
+  gap: 12px;
+  flex-wrap: nowrap;
+}
+
+.form-item {
+  min-width: 120px;
+  padding: 10px;
+  border-radius: 10px;
+  border: solid 1px var(--color-background-third);
+  background-color: var(--color-background-secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.form-score {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.form-opponent {
+  font-size: 12px;
+  opacity: 0.7;
+  font-weight: 400;
+}

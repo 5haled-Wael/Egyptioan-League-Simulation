@@ -1,0 +1,323 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Numerics;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace sw_project_logic_testing
+{
+    internal class match_engin
+    {
+        static Random random = new Random();
+        internal class MatchEngine
+        {
+            static Random random = new Random();
+
+            public static void SimulateMatch(Match match, team home, team away) 
+            {
+                match.HomeScore = 0;
+                match.AwayScore = 0;
+                home.SubstitutionsMade = 0;
+                away.SubstitutionsMade = 0;
+
+                Console.WriteLine($"Match Started: {home.Name} vs {away.Name}");
+                 
+                for (int minute = 1; minute <= 90; minute++)
+                {
+                  
+                    UpdateStamina(home);
+                    UpdateStamina(away);
+
+                    
+                    TryInjuries(home, minute);
+                    TryInjuries(away, minute);
+
+                    TryCards(home, minute);
+                    TryCards(away, minute);
+
+                   
+                    TryCreateChance(match, home, away, true, minute);
+                    TryCreateChance(match, away, home, false, minute);
+
+                    
+                    if (minute >= 60)
+                    {
+                        TrySubstitution(home, minute);
+                        TrySubstitution(away, minute);
+                    }
+                }
+
+                Console.WriteLine($"Final Score: {home.Name} {match.HomeScore} - {match.AwayScore} {away.Name}");
+            }
+
+          
+
+            static void UpdateStamina(team team)
+            {
+                foreach (var p in team.lineup.Players)
+                {
+                    p.Stamina -= 0.5f ;
+                    if (p.Stamina < 0) p.Stamina = 0;
+                }
+            }
+
+            
+
+            static void TryCreateChance(Match match, team attack, team defend, bool isHome, int minute)
+            {
+                double attackPower = attack.lineup.AttackPower;
+                double defensePower = defend.lineup.DefensePower;
+
+                double chanceProb = attackPower / (attackPower + defensePower);
+
+                if (random.NextDouble() < chanceProb * 0.1) 
+                {
+                    double gkPower = defend.lineup.Players
+                        .Where(p => p.Position == "GK")
+                        .Sum(p => p.Power);
+
+                    double conversionRate = attackPower / (attackPower + gkPower);
+
+                    if (random.NextDouble() < conversionRate)
+                    {
+                        var scorer = GetScorer(attack);
+
+                        if (isHome)
+                            match.HomeScore++;
+                        else
+                            match.AwayScore++;
+
+                        Console.WriteLine($"{minute}' GOAL! {scorer.Name} ({attack.Name})");
+                    }
+                }
+            }
+
+            
+            static void TryInjuries(team team, int minute)
+            {
+                foreach (var p in team.lineup.Players)
+                {
+                    double injuryChance = 0.001 + (1 - p.Stamina / 100) * 0.01;
+
+                    if (random.NextDouble() <= injuryChance)
+                    {
+                        p.IsInjured = true;
+                        Console.WriteLine($"{minute}' 🩹 Injury: {p.Name}");
+
+                        ForceSubstitution(team, p, minute);
+                    }
+                }
+            }
+
+
+            static void TryCards(team team, int minute)
+            {
+                foreach (var p in team.lineup.Players)
+                {
+                    double foulChance = 0.02 + p.Aggression * 0.05;
+
+                    if (random.NextDouble() < foulChance)
+                    {
+                        if (random.NextDouble() < 0.85)
+                        {
+                            Console.WriteLine($"{minute}' 🟨 Yellow Card: {p.Name}");
+                        }
+                        else
+                        {
+                            Console.WriteLine($"{minute}' 🟥 Red Card: {p.Name}");
+                            team.lineup.Players.Remove(p);
+                            break;
+                        }
+                    }
+                }
+            }
+
+            
+
+            static void TrySubstitution(team team, int minute)
+            {
+                if (team.SubstitutionsMade >= 5)
+                    return;
+
+                var tired = team.lineup.Players
+                    .Where(p => !p.IsInjured)
+                    .OrderBy(p => p.Stamina)
+                    .FirstOrDefault();
+
+                if (tired == null || tired.Stamina > 60)
+                    return;
+
+                var sub = team.bench
+                    .Where(p => p.Position == tired.Position)
+                    .OrderByDescending(p => p.Power)
+                    .FirstOrDefault();
+
+                if (sub == null)
+                    return;
+
+                team.lineup.Players.Remove(tired);
+                team.lineup.Players.Add(sub);
+
+                sub.Stamina = 100;
+
+                team.SubstitutionsMade++;
+
+                Console.WriteLine($"{minute}' 🔁 {sub.Name} IN - {tired.Name} OUT");
+            }
+
+           
+
+            static void ForceSubstitution(team team, player injured, int minute)
+            {
+                if (team.SubstitutionsMade >= 5)
+                    return;
+
+                var sub = team.bench
+                    .Where(p => p.Position == injured.Position)
+                    .FirstOrDefault();
+
+                if (sub == null)
+                    return;
+
+                team.lineup.Players.Remove(injured);
+                team.lineup.Players.Add(sub);
+
+                team.SubstitutionsMade++;
+
+                Console.WriteLine($"{minute}' 🚑 Forced Sub: {sub.Name} IN - {injured.Name} OUT");
+            }
+
+
+            static player GetScorer(team team)
+            {
+                var attackers = team.lineup.Players
+                    .Where(p => p.Position == "ST" || p.Position == "RW" || p.Position == "LW")
+                    .ToList();
+
+                var mids = team.lineup.Players
+                    .Where(p => p.Position == "CM")
+                    .ToList();
+
+                var defenders = team.lineup.Players
+                    .Where(p => p.Position == "CB" || p.Position == "LB" || p.Position == "RB")
+                    .ToList();
+
+                int x = random.Next(0, 100);
+
+                List<player> group =
+                    x < 50 && attackers.Any() ? attackers :
+                    x < 80 && mids.Any() ? mids :
+                    defenders.Any() ? defenders : team.lineup.Players;
+
+                int total = group.Sum(p => (int)p.Power);
+                int r = random.Next(0, total);
+
+                int current = 0;
+                foreach (var p in group)
+                {
+                    current += (int)p.Power;
+                    if (r <= current)
+                        return p;
+                }
+
+                return group.Last();
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #region matchsimulation
+    public static void MatchSimulation(Match match, team hTeam, team aTeam, double homeAdvantage = 1.1)
+        {
+            // ===== حساب قوة الفرق مع ميزة الفريق الأرضي =====
+            double hAttack = hTeam.lineup.AttackPower * homeAdvantage;
+            double aAttack = aTeam.lineup.AttackPower;
+
+            double hDefense = hTeam.lineup.DefensePower * homeAdvantage;
+            double aDefense = aTeam.lineup.DefensePower;
+
+            // ===== ExpectedGoals = عدد الفرص =====
+            int hExpectedChances = (int)Math.Ceiling(hAttack / (hAttack + aDefense) * 10);
+            int aExpectedChances = (int)Math.Ceiling(aAttack / (aAttack + hDefense) * 10);
+
+            // ===== تحويل الفرص لأهداف =====
+            match.HomeScore = CalculateGoals(hTeam, aTeam, hExpectedChances);
+            match.AwayScore = CalculateGoals(aTeam, hTeam, aExpectedChances);
+
+            // ===== تسجيل الأهداف باللاعبين =====
+            Console.WriteLine($"{hTeam.Name} scored {match.HomeScore} goals:");
+            for (int i = 0; i < match.HomeScore; i++)
+            {
+                var scorer = GetScorer(hTeam);
+                Console.WriteLine($" - {scorer.Name} ({scorer.Position})");
+            }
+
+            Console.WriteLine($"{aTeam.Name} scored {match.AwayScore} goals:");
+            for (int i = 0; i < match.AwayScore; i++)
+            {
+                var scorer = GetScorer(aTeam);
+                Console.WriteLine($" - {scorer.Name} ({scorer.Position})");
+            }
+        }
+        #endregion
+
+
+        static int CalculateGoals(team hteam, team ateam, int chances)
+        {
+            double gkpower = ateam.lineup.Players.Where(p => p.Position == "GK").Sum(p => p.Power) * .8 + ateam.lineup.DefensePower * .2;
+            double ConversionRate = hteam.lineup.AttackPower / (gkpower + hteam.lineup.AttackPower);
+            int goals = 0;
+            for (int i = 0; i <= chances; i++)
+            {
+                if (random.NextDouble() < ConversionRate)
+                    goals++;
+            }
+            return goals;
+        }
+
+
+        static player GetScorer(team team)
+        {
+            // ترتيب الأولويات: Attack > Midfield > Defense
+            var attackers = team.lineup.Players.Where(p => p.Position == "ST" || p.Position == "RW" || p.Position == "LW").ToList();
+            var midfielders = team.lineup.Players.Where(p => p.Position == "CM").ToList();
+            var defenders = team.lineup.Players.Where(p => p.Position == "CB" || p.Position == "LB" || p.Position == "RB").ToList();
+
+            int x = random.Next(0, 100);
+            List<player> selectedGroup;
+
+            if (x < 50 && attackers.Any())
+                selectedGroup = attackers;
+            else if (x < 80 && midfielders.Any())
+                selectedGroup = midfielders;
+            else
+                selectedGroup = defenders.Any() ? defenders : team.lineup.Players;
+
+            // اختيار لاعب بناءً على القوة النسبية
+            int totalPower = selectedGroup.Sum(p => (int)p.Power);
+            int randomValue = random.Next(0, totalPower);
+            int current = 0;
+            foreach (var player in selectedGroup)
+            {
+                current += (int)player.Power;
+                if (randomValue <= current)
+                    return player;
+            }
+
+            return selectedGroup.Last();
+        }

@@ -1,0 +1,41 @@
+.hero {
+  background-image: url(../assets/2026.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.hero .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  min-height: 100vh;
+}
+
+.hero .hero-heading {
+  font-size: clamp(1.75rem, 4vw + 1rem, 3.5rem);
+}
+
+.hero p {
+  font-size: clamp(0.85rem, 3vw, 1.75rem);
+}
+
+.hero .btn {
+  font-size: clamp(0.85rem, 3vw, 1.2rem);
+  transition: 0.3s;
+}
+
+.hero .btn:first-child {
+  background-color: var(--color-text-primary);
+  color: var(--color-text-secondary);
+}
+
+.hero .btn:last-child {
+  background-color: var(--color-background-secondary);
+  color: var(--color-text-primary);
+}
+
+.hero .btn:hover {
+  background-color: rgba(3, 6, 21, 0.8);
+  color: var(--color-text-primary);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
